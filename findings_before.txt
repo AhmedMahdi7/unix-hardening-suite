@@ -1,0 +1,24 @@
+[SUID_CHECK]
+[SGID_CHECK]
+SGID_FILE:/usr/bin/chage
+SGID_FILE:/usr/bin/crontab
+SGID_FILE:/usr/bin/expiry
+SGID_FILE:/usr/bin/plocate
+SGID_FILE:/usr/bin/ssh-agent
+SGID_FILE:/usr/bin/dotlockfile
+SGID_FILE:/usr/sbin/unix_chkpwd
+SGID_FILE:/usr/lib/xorg/Xorg.wrap
+SGID_FILE:/usr/lib/x86_64-linux-gnu/utempter/utempter
+[WORLD_WRITABLE]
+WORLD_WRITABLE_NO_STICKY:/shared
+WORLD_WRITABLE_STICKY:/tmp
+[SUDOERS]
+NOPASSWD_RULE:/etc/sudoers.d/ospd-openvas:_gvm ALL = NOPASSWD: /usr/sbin/openvas
+NOPASSWD_RULE:/etc/sudoers.d/kali-grant-root:%kali-trusted   ALL=(ALL:ALL) NOPASSWD: ALL
+[OPEN_PORTS]
+LISTENING:45037:users:(("containerd",pid=902,fd=9))
+LISTENING:22:users:(("sshd",pid=898,fd=6))
+LISTENING:22:users:(("sshd",pid=898,fd=7))
+[CRON_JOBS]
+[OUTDATED_PACKAGES]
+OUTDATED:firefox-esr
