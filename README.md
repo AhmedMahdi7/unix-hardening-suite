@@ -27,8 +27,7 @@ sudo ./audit.sh
 Before Hardening: 25 / 100
 After Hardening: 85 / 100
 
-View the live report: https://ahmedmahdi7.github.io/unix-hardening-suite/security_report_20260510_160923.html
-
+View the live report: https://ahmedmahdi7.github.io/unix-hardening-suite/HTML_comparison_report.html
 ## Checks Performed
 
 - Suspicious SUID/SGID files
